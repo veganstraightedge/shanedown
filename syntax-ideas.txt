@@ -7,6 +7,9 @@
 ######{ id="foo" class="bar" } h6
 ###### { id="foo" class="bar" } h6
 
+
+
+
 *strong*
 *strong*{ id="foo" class="bar" }
 *strong* { id="foo" class="bar" }
@@ -44,6 +47,7 @@ _ dd
 _ dd
 
 +{ id="foo" class="bar" } dt
++ { id="foo" class="bar" } dt
 _{ id="foo" class="bar" } dd
 _ { id="foo" class="bar" } dd
 
@@ -150,3 +154,7 @@ Figcaption is the next line of text with no line break.
   {class="bar"}
   {/}
 {/}
+
+{{span text}}
+{{span text}}{id="foo"}
+{{span text}} {id="foo"}
