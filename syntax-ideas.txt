@@ -65,6 +65,15 @@ footnote content
 - content
 ^^^ (ends a numbered footnote)
 
+(audio tags with one or many audio URLs)
+[[http://example.com/audio.wav]]
+[[http://example.com/audio.wav http://example.com/audio.mp3]]
+
+(video tags with one or many video URLs)
+[[http://example.com/audio.wav]]
+[[http://example.com/audio.wav http://example.com/audio.mp3]]
+
+
 
 
 
@@ -78,10 +87,6 @@ text link partially bold
 
 text link partially italic
 [[http://example.com _link_ text]]
-
-
-
-
 
 1.{ id="foo" class="bar" } order
 1. { id="foo" class="bar" } order
@@ -169,12 +174,3 @@ caption text { id="foo" class="bar" }
 {{span text}}
 {{span text}}{id="foo"}
 {{span text}} {id="foo"}
-
-(audio tags with one or many audio URLs)
-[[http://example.com/audio.wav]]
-[[http://example.com/audio.wav http://example.com/audio.mp3]]
-
-(video tags with one or many video URLs)
-[[http://example.com/audio.wav]]
-[[http://example.com/audio.wav http://example.com/audio.mp3]]
-
