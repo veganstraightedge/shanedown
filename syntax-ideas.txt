@@ -47,21 +47,6 @@ ________________________________
 Figcaption is the next line of text with no line break.
 
 
-
-
-
-
-
-bold text link
-*[[http://example.com link text]]*
-
-text link partially bold
-[[http://example.com link *text*]]
-
-text link partially italic
-[[http://example.com _link_ text]]
-
-
 text link named footnote (to anchor)
 [^name]
 
@@ -79,6 +64,21 @@ footnote content
 - whatever
 - content
 ^^^ (ends a numbered footnote)
+
+
+
+
+
+
+bold text link
+*[[http://example.com link text]]*
+
+text link partially bold
+[[http://example.com link *text*]]
+
+text link partially italic
+[[http://example.com _link_ text]]
+
 
 
 
