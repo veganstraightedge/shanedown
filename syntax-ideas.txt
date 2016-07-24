@@ -7,9 +7,6 @@
 ######{ id="foo" class="bar" } h6
 ###### { id="foo" class="bar" } h6
 
-
-
-
 *strong*
 *strong*{ id="foo" class="bar" }
 *strong* { id="foo" class="bar" }
@@ -25,6 +22,62 @@ __i__
 *** hr (3+ asterisks alone on a line)
 ***{ id="foo" class="bar" }
 *** { id="foo" class="bar" }
+
+
+
+
+
+
+text link
+[[http://example.com link text]]
+
+bold text link
+*[[http://example.com link text]]*
+
+text link partially bold
+[[http://example.com link *text*]]
+
+text link partially italic
+[[http://example.com _link_ text]]
+
+text link to anchor
+[[#id-of-some-tag link text]]
+
+
+text link named footnote (to anchor)
+[^name]
+
+text link numbered footnote (to anchor)
+[^1]
+
+^^^ footnote name (starts a named footnote)
+footnote content
+- whatever
+- content
+^^^ footnote name (ends a named footnote)
+
+^^^ (starts a numbered footnote)
+footnote content
+- whatever
+- content
+^^^ (ends a numbered footnote)
+
+
+image with alt text
+[[http://example.com/photo.png alt text]]
+
+image without alt text
+[[http://example.com/photo.png]]
+
+image without image extension
+[[[http://example.com/photo]]]
+
+figure image with figcaption
+[[http://example.com/photo.png]]
+Figcaption is the next line of text with no line break.
+
+
+
 
 1.{ id="foo" class="bar" } order
 1. { id="foo" class="bar" } order
@@ -80,54 +133,6 @@ caption text { id="foo" class="bar" }
 |{ id="foo" class="bar" } th | th | th |
 | td | td |{ id="foo" class="bar" } td |
 
-
-text link
-[[http://example.com link text]]
-
-bold text link
-*[[http://example.com link text]]*
-
-text link partially bold
-[[http://example.com link *text*]]
-
-text link partially italic
-[[http://example.com _link_ text]]
-
-text link to anchor
-[[#id-of-some-tag link text]]
-
-
-text link named footnote (to anchor)
-[^name]
-
-text link numbered footnote (to anchor)
-[^1]
-
-^^^ footnote name (starts a named footnote)
-footnote content
-- whatever
-- content
-^^^ footnote name (ends a named footnote)
-
-^^^ (starts a numbered footnote)
-footnote content
-- whatever
-- content
-^^^ (ends a numbered footnote)
-
-
-image with alt text
-[[http://example.com/photo.png alt text]]
-
-image without alt text
-[[http://example.com/photo.png]]
-
-image without image extension
-[[[http://example.com/photo]]]
-
-figure image with figcaption
-[[http://example.com/photo.png]]
-Figcaption is the next line of text with no line break.
 
 
 { id="foo" class="bar" } div with a id of foo and a class of bar
