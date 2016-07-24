@@ -23,13 +23,19 @@ __i__
 ***{ id="foo" class="bar" }
 *** { id="foo" class="bar" }
 
-
-
-
-
-
 text link
 [[http://example.com link text]]
+
+text link to anchor
+[[#id-of-some-tag link text]]
+
+text link to anchor
+[[/path/to/page link text]]
+
+
+
+
+
 
 bold text link
 *[[http://example.com link text]]*
@@ -39,9 +45,6 @@ text link partially bold
 
 text link partially italic
 [[http://example.com _link_ text]]
-
-text link to anchor
-[[#id-of-some-tag link text]]
 
 
 text link named footnote (to anchor)
