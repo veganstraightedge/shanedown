@@ -4,21 +4,33 @@
 #### h4
 ##### h5
 ###### h6
+######{ id="foo" class="bar" } h6
+###### { id="foo" class="bar" } h6
 
 *bold*
+*bold*{ id="foo" class="bar" }
+*bold* { id="foo" class="bar" }
+
 _italic_
+_italic_{ id="foo" class="bar" }
+_italic_ { id="foo" class="bar" }
 
 *** hr (3+ asterisks alone on a line)
+***{ id="foo" class="bar" }
+*** { id="foo" class="bar" }
 
-1. order
+1.{ id="foo" class="bar" } order
+1. { id="foo" class="bar" } order
 2. list
 3. items
   1. nested
   1. two spaces
 1. numbers
 
-* unordered
-  - nested
+*{ id="foo" class="bar" } unordered
+* { id="foo" class="bar" } unordered
+  -{ id="foo" class="bar" } nested
+  - { id="foo" class="bar" } nested
   * two spaces
 - list
 - items
@@ -27,18 +39,38 @@ _italic_
 _ dd
 _ dd
 
++{ id="foo" class="bar" } dt
+_{ id="foo" class="bar" } dd
+_ { id="foo" class="bar" } dd
+
+```{ id="foo" class="bar" } starts code block with attrs
 ``` starts code block
 ``` ends code block
 
+```ruby{ id="foo" class="bar" } starts ruby code block with attrs
 ```ruby starts ruby code block
 ```     ends code block
 
-(optional: unscores start a table)
-(required: unscores start a table to add a caption)
-________________
-caption
+(3+ unscores start a table)
+___
 | th | th | th |
 | td | td | td |
+
+(required: 3+ unscores start a table to add a caption)
+________________
+caption text
+| th | th | th |
+| td | td | td |
+
+________________{ id="foo" class="bar" }
+caption text{ id="foo" class="bar" }
+|{ id="foo" class="bar" } th | th | th |
+| td | td |{ id="foo" class="bar" } td |
+
+________________ { id="foo" class="bar" }
+caption text { id="foo" class="bar" }
+|{ id="foo" class="bar" } th | th | th |
+| td | td |{ id="foo" class="bar" } td |
 
 
 text link
@@ -63,11 +95,17 @@ text link named footnote (to anchor)
 text link numbered footnote (to anchor)
 [^1]
 
-^^^ footnote name (starts the footnote)
+^^^ footnote name (starts a named footnote)
 footnote content
 - whatever
 - content
-^^^ footnote name (ends the footnote)
+^^^ footnote name (ends a named footnote)
+
+^^^ (starts a numbered footnote)
+footnote content
+- whatever
+- content
+^^^ (ends a numbered footnote)
 
 
 image with alt text
@@ -83,4 +121,16 @@ figure image with figcaption
 [[http://example.com/photo.png]]
 Figcaption is the next line of text with no line break.
 
+
+{ id="foo" class="bar" } div with a id of foo and a class of bar
+{} div with no attrs
+{/} closes a div
+
+{}
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{/}
+
+{} div with no attrs
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{/}
 
