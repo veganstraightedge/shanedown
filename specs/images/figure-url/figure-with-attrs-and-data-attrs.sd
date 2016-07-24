@@ -1,0 +1,3 @@
+________________________________
+[[http://example.com/photo.png image alt text]]{ id="dog" class="cat" data={ dog="Civ" cat="Rooftop" } }
+Figure's caption text

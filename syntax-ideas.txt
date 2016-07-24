@@ -32,6 +32,21 @@ text link to anchor
 text link to anchor
 [[/path/to/page link text]]
 
+image with alt text
+[[http://example.com/photo.png alt text]]
+
+image without alt text
+[[http://example.com/photo.png]]
+
+image without image extension
+[[[http://example.com/photo]]]
+
+(3+ underscores to start a figure image with figcaption)
+________________________________
+[[http://example.com/photo.png]]
+Figcaption is the next line of text with no line break.
+
+
 
 
 
@@ -64,20 +79,6 @@ footnote content
 - whatever
 - content
 ^^^ (ends a numbered footnote)
-
-
-image with alt text
-[[http://example.com/photo.png alt text]]
-
-image without alt text
-[[http://example.com/photo.png]]
-
-image without image extension
-[[[http://example.com/photo]]]
-
-figure image with figcaption
-[[http://example.com/photo.png]]
-Figcaption is the next line of text with no line break.
 
 
 
