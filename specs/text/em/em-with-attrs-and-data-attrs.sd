@@ -1,1 +1,1 @@
-*emphasized text*{ id="dog" class="cat" data={ dog="Civ" class="Rooftop"} }
+_emphasized text_{ id="dog" class="cat" data={ dog="Civ" class="Rooftop"} }
