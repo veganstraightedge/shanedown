@@ -112,6 +112,8 @@ _ { id="foo" class="bar" } dd
 ```ruby starts ruby code block
 ```     ends code block
 
+inline `code` snippet
+
 (3+ unscores start a table)
 ___
 | th | th | th |
