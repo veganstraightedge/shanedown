@@ -1,0 +1,86 @@
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+
+*bold*
+_italic_
+
+*** hr (3+ asterisks alone on a line)
+
+1. order
+2. list
+3. items
+  1. nested
+  1. two spaces
+1. numbers
+
+* unordered
+  - nested
+  * two spaces
+- list
+- items
+
++ dt
+_ dd
+_ dd
+
+``` starts code block
+``` ends code block
+
+```ruby starts ruby code block
+```     ends code block
+
+(optional: unscores start a table)
+(required: unscores start a table to add a caption)
+________________
+caption
+| th | th | th |
+| td | td | td |
+
+
+text link
+[[http://example.com link text]]
+
+bold text link
+*[[http://example.com link text]]*
+
+text link partially bold
+[[http://example.com link *text*]]
+
+text link partially italic
+[[http://example.com _link_ text]]
+
+text link to anchor
+[[#id-of-some-tag link text]]
+
+
+text link named footnote (to anchor)
+[^name]
+
+text link numbered footnote (to anchor)
+[^1]
+
+^^^ footnote name (starts the footnote)
+footnote content
+- whatever
+- content
+^^^ footnote name (ends the footnote)
+
+
+image with alt text
+[[http://example.com/photo.png alt text]]
+
+image without alt text
+[[http://example.com/photo.png]]
+
+image without image extension
+[[[http://example.com/photo]]]
+
+figure image with figcaption
+[[http://example.com/photo.png]]
+Figcaption is the next line of text with no line break.
+
+
