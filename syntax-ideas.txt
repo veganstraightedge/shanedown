@@ -7,13 +7,17 @@
 ######{ id="foo" class="bar" } h6
 ###### { id="foo" class="bar" } h6
 
-*bold*
-*bold*{ id="foo" class="bar" }
-*bold* { id="foo" class="bar" }
+*strong*
+*strong*{ id="foo" class="bar" }
+*strong* { id="foo" class="bar" }
 
-_italic_
-_italic_{ id="foo" class="bar" }
-_italic_ { id="foo" class="bar" }
+**b**
+
+_em_
+_em_{ id="foo" class="bar" }
+_em_ { id="foo" class="bar" }
+
+__i__
 
 *** hr (3+ asterisks alone on a line)
 ***{ id="foo" class="bar" }
